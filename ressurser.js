@@ -18,6 +18,7 @@ function getArticles() {
         const article_element = document.getElementById(`article-${index + 1}`);
         if (article_element ) {
             const content_div= document.createElement("div");
+            content_div.className="article-container"
             const title = document.createElement("h1");
             title.textContent= article.title;
             content_div.appendChild(title)
