@@ -18,7 +18,7 @@ function getArticles() {
         const article_element = document.getElementById(`article-${index + 1}`);
         if (article_element ) {
             const content_div= document.createElement("div");
-            const title = document.createElement("h2");
+            const title = document.createElement("h1");
             title.textContent= article.title;
             content_div.appendChild(title)
         
@@ -42,12 +42,3 @@ function getArticles() {
    
 }
 getArticles();
-
-
-window.addEventListener('scroll', function() {
-    const parallaxElements = document.querySelectorAll('.parallax');
-    parallaxElements.forEach(function(el) {
-        const scrollPosition = window.scrollY;
-        el.style.backgroundPositionY = `${scrollPosition * 0.5}px`; 
-    });
-});
