@@ -95,16 +95,3 @@ small {
     }
 }
 
-@media (min-width: 1024px) {
-    .parallax {
-        min-height: 100vh;
-    }
-
-    .article-container {
-        width: 40%;
-    }
-
-    h1 {
-        font-size: 36px;
-    }
-}
