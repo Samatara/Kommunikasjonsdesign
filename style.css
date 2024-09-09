@@ -45,5 +45,34 @@ header {
     margin-bottom: 20px; 
 }
 
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.foote{
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footeh2 {
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.foote ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer li{
+    list-style-type: none;
+    margin-bottom: 5px;
+    font-size: 18px;
+}
+
+
 
 
