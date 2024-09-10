@@ -14,6 +14,7 @@ header{
     background-color: none;
     position: sticky;
     top: 0;
+    color: #333;
     h1{
         font-size: 10px;
         margin: 0 10px;
@@ -30,9 +31,32 @@ header{
 }
 
 #article-1, #article-2, #article-3, #article-4, #article-5, #article-6, #article-7, .content {
+    display: flex;
+    justify-content: center;
     padding: 20px;
     background-color: white;
     margin: 10px 0;
+    h1, h2{
+        text-align: left;
+        font-size: 16px;
+        margin: 20px 40px;
+    }
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    h2{
+        display: flex;
+        font-size: 16px;
+        width: 100%;
+        justify-content: center;
+        margin: 20px;
+    }
+    ul{
+        color: #333;
+    }
 }
 
 h1, h2 {
