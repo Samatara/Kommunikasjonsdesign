@@ -36,6 +36,11 @@ header{
     text-align: center;
     line-height: 2rem;
 }
+
+#article-4 h1 {
+    display: contents;
+}
+
 #article-7 h1{
     display: contents;
 }
@@ -60,6 +65,7 @@ header{
     flex-wrap: wrap;
     padding:  0 20px 20px 20px;
     background-color: white;
+    justify-content: center;
     h2{
         display: flex;
         font-size: 16px;
