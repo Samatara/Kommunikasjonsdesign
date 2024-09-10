@@ -10,6 +10,17 @@ body {
     line-height: 1.6rem;
 }
 
+header{
+    background-color: none;
+    position: sticky;
+    top: 0;
+    h1{
+        font-size: 10px;
+        margin: 0 10px;
+        text-align: left;
+    }
+}
+
 .parallax {
     height: 500px;
     background-image: url(picvideo/kiwi.png);
