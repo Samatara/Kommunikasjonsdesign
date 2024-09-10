@@ -36,6 +36,9 @@ header{
     text-align: center;
     line-height: 2rem;
 }
+#article-7 h1{
+    display: contents;
+}
 
 .article-container{
     display: flex;
@@ -55,7 +58,7 @@ header{
 .content {
     display: flex;
     flex-wrap: wrap;
-    padding: 20px;
+    padding:  0 20px 20px 20px;
     background-color: white;
     h2{
         display: flex;
