@@ -18,19 +18,20 @@ body {
     background-size: cover;
 }
 
-#article-1, #article-2, #article-3, #article-4, #article-5, #article-6, #article-7 {
+#article-1, #article-2, #article-3, #article-4, #article-5, #article-6, #article-7, .content {
     padding: 20px;
     background-color: white;
+    margin: 10px 0;
 }
 
 h1, h2 {
-    margin-bottom: 20px;
+    margin: 20px;
     text-align: center;
 }
 
 p {
     max-width: 800px;
-    margin: 0 auto 40px;
+    margin: 0 40px;
     font-size: 16px;
     color: #333;
 }
