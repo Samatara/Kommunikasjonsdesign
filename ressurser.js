@@ -3,7 +3,6 @@ const articles = [
         title: "Vil du ha lenger salgstider på alkohol? ",
     },
     {
-        imgs: "picvideo/kiwi.png",
         content: "Forslaget til Halden Kommune vil gi dagligvaregigantene Kiwi og Meny et nei til å " +
                  "utvide salgstidene for alkohol og nettsalg av alkohol. Nå skal politikerne få avgjøre " +
                  "om det blir fest eller ei for næringslivet. ",
