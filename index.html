@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parallax News Website</title>
+    <title>Parallax News </title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -11,14 +11,70 @@
         <h1>Parallax News</h1>
     </header>
 
-    <section id="parallax-section-1">
-        <div id="article-1" class="article-container"></div>
-    </section>
+   <main class="wrapper">
+    <video autoplay muted loop id="background-video">
+        <source src="picvideo/beer.mp4" type="video/mp4">
+    </video>
 
-    <section id="parallax-section-2">
-        <div id="article-2" class="article-container"></div>
-    </section>
+  
 
+   <!-- Seksjonene i HTML-en kan du endre klassenavnene på for å style i CSS, men på div-elementene i seksjonene kan du ikke endre klassenavnene. 
+    Du kan likevel bruke dem til styling. CSS-en jeg lagde var bare midlertidig, så du kan style det som du ønsker. 
+    PS: Kiwi-bildet skal være øverst, men du bestemmer hvor du synes det ser best ut. -->
+
+   
+        <section class="parallax" >
+            <div id="article-1"></div>
+        </section>
+
+        <section class="parallax">
+                <div id="article-2" ></div>
+        </section>
+        <section>
+            <div id="article-3"></div>
+        </section>
+
+        <section class="parallax">
+            <div class="content">
+                <h2>Forbudet kort oppsummert:</h2>
+                <ul>
+                    <li>Opprettholder salgstidene fra kl. 09.00  20.00.</li>
+                    <li>Opprettholder at det ikke blir salg på idrettsarenaer.</li>
+                    <li>Opprettholder at det ikke blir nettsalg av alkohol i Halden. </li>
+                </ul>
+            </div>
+            
+        </section>
+        
+        <section>
+            <div id="article-4"></div>
+        </section>
+
+        <section>
+            <div id="article-5"></div>
+        </section>
+
+        <section>
+            <div id="article-6"></div>
+        </section>
+
+        <section>
+            <div id="article-7"></div>
+        </section>
+    </main>
     <script src="ressurser.js"></script>
+    <footer>
+        <div class="footer">
+            <ul>
+               
+                <li>Design: Marlene </li>
+                <li>Journalist: Granit</li>
+                <li>Programmering: Trym </li>
+                <li>Programmering: Samatar</li>   
+            </ul>
+        </div>
+    </footer>
+    
+
 </body>
 </html>
