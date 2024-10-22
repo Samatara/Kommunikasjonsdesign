@@ -1,0 +1,49 @@
+/* Map Styling */
+#map {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    pointer-events: none; 
+}
+
+
+body {
+    display: flex;
+    justify-content: flex-end; 
+    align-items: flex-start;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; 
+}
+
+
+.content-wrapper {
+    z-index: 2;
+    height: 100vh;
+    overflow-y: scroll;
+    padding: 20px;
+    margin: 20px;
+    width: 400px;
+    background-color: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.content-wrapper img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+
+.content-wrapper p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
