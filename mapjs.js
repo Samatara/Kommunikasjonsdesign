@@ -84,8 +84,8 @@ function initializeMap() {
     });
 }
 
-window.onload = function () {
+document.addEventListener('DOMContentLoaded', () => {
     initializeMap().catch((error) => {
         console.error('An error occurred while loading the map', error);
     });
-};
+});
