@@ -1,49 +1,116 @@
-html, body {
-    height: 100%;
+body, html {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-#map {
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    z-index: 1;
-}
-
-#sidebar {
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 300px;
-    height: 100vh;
-    margin: 20px;
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    box-shadow: -2px 0px 8px rgba(0, 0, 0, 0.1);
-    display: none; 
-    z-index: 2;
-    overflow-y: auto;
-}
-
-#sidebar.visible {
-    display: block; 
-}
-
-#sidebar img {
-    max-width: 100%;
-    border-radius: 8px;
-    margin-top: 10px;
-}
-
-#sidebar strong {
-    font-size: 1.5rem;
-}
-
-header {
+header.map_header {
     text-align: center;
-    padding: 10px;
+    padding: 15px;
     background-color: #f8f8f8;
-    font-size: 1.5rem;
-    z-index: 3;
-    position: relative;
+    font-size: 1.2rem;
+}
+
+.article-section {
+    padding: 15px;
+}
+
+.article-section h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.article-section p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #333;
+}
+
+.map {
+    width: 100%;
+    height: 250px; 
+    margin: 15px 0;
+}
+footer {
+    padding: 20px;
+    font-size: 16px;
+    color: #666;
+    background: #222; 
+}
+
+
+@media (min-width: 600px) {
+  
+
+    header.map_header {
+        font-size: 1.4rem;
+        padding: 20px;
+    }
+
+    .article-section {
+        padding: 20px;
+    }
+
+    .article-section h2 {
+        font-size: 1.7em;
+    }
+
+    .article-section p {
+        font-size: 1.1em;
+    }
+
+    .map {
+        height: 300px;
+        margin: 20px 0;
+    }
+}
+
+
+@media (min-width: 768px) {
+   
+
+    .article-section {
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 25px;
+    }
+
+    .map {
+        height: 350px;
+    }
+}
+
+@media (min-width: 992px) {
+
+    .article-section {
+        max-width: 800px;
+        padding: 30px;
+    }
+
+    .article-section h2 {
+        font-size: 1.9em;
+    }
+
+    .article-section p {
+        font-size: 1.15em;
+    }
+
+    header.map_header {
+        font-size: 1.6rem;
+    }
+
+    .map {
+        height: 400px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .article-section {
+        max-width: 1000px;
+    }
+
+    .map {
+        height: 450px;
+    }
 }
