@@ -4,12 +4,12 @@ document.addEventListener("DOMContentLoaded", function() {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                video.play(); // Start video when it enters view
+                video.play();
             } else {
-                video.pause(); // Pause video when it exits view
+                video.pause();
             }
         });
-    }, { threshold: 0.5 }); // 50% of the video must be visible to play
+    }, { threshold: 0.5 });
 
     observer.observe(video);
 });
