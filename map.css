@@ -153,3 +153,35 @@ h2{
         height: 400px;
     }
 }
+
+/*For Laptop*/
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    .text-box{
+        font-size: 80px;
+    }
+    h2{
+        font-size: 35px;
+        width: 80%;
+    }
+    .article-section h3{
+        font-size: 35px;
+    }
+    .article-section p{
+        width: 80%;
+        font-size: 20px;
+    }
+    .map{
+        width: 80%;
+        height: 500px;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: fit-content;
+        margin: 2rem auto;
+    }
+    .footer p{
+        font-size: 30px;
+    }
+}
