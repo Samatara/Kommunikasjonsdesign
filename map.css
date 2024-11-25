@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root{
+    --background-color: #000;
+    --paragraph-text-color: #d8d8d8;
+    --paragraph-background-color: #8a2c12;
+    --headline-font: 'Bungee', sans-serif;
+    --paragraph-font: 'Playfair Display', serif;
+}
+
+body{
+    background-color: var(--background-color);
+}
+
+header {
+    background-color: none;
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    margin-top: 1rem;
+    width: fit-content;
+    z-index: 1;
+}
+
+.logo {
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    margin: 1rem;
+    font-style: bold;
+    opacity: 50%;
+}
+
+.spacer {
+    height: 50vh;
+}
+
+.headline-container {
+    width: fit-content;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+}
+
+.container {
+    width: 100%;
+    height: 65vh;
+    position: relative;
+    animation: fade-in linear forwards;
+    animation-timeline: view(110vh 200px);
+}
+
+.container video {
+    width: 100%;
+    height: 100%;
+    max-width: 1440px;
+}
+
+.text-box {
+    font-family: var(--headline-font);
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #000;
+    height: 100%;
+    width: 100%;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 100px;
+    font-weight: 400;
+    max-width: 1440px;
+    mix-blend-mode: multiply;
+    animation: color-change 2s linear both;
+    animation-timeline: colorScroll;
+}
+
+h2{
+    color: var(--paragraph-background-color);
+    font-family: var(--headline-font);
+    text-align: center;
+    font-size: 2.3rem;
+    margin-bottom: 10px;
+}
+
+.article-section {
+    padding: auto;
+    margin: auto;
+}
+
+.article-section h3 {
+    color: var(--paragraph-background-color);
+    font-family: var(--headline-font);
+    text-align: center;
+    font-size: 2.3rem;
+    margin: auto;
+}
+
+.article-section p {
+    width: 70%;
+    margin: 2rem auto;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-text-color);
+    letter-spacing: .5px;
+    max-width: 1440px;
+}
+
+.map {
+    width: 70%;
+    height: 500px; 
+    margin: 15px auto;
+    max-width: 1440px;
+}
+
+.footer p{
+    width: fit-content;
+    margin: 1.2rem auto;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    font-family: var(--paragraph-font);
+    color: var(--paragraph-text-color);
+    letter-spacing: .5px;
+}
+
+@keyframes color-change {
+    from { color: black; }
+    to { color: white; }
+}
+
