@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     );
 });
 
-function initializeMap(mapId, coordinates, title, description) {
+function initializeMap(mapId, coordinates, title) {
     const map = L.map(mapId, {
         scrollWheelZoom: false,
     }).setView(coordinates, 15);
