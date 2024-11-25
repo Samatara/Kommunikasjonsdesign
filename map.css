@@ -10,9 +10,6 @@
 
 body{
     background-color: var(--background-color);
-    margin: 0;
-    padding: 0;
-    
 }
 
 header {
@@ -34,12 +31,18 @@ header {
     opacity: 50%;
 }
 
+.spacer {
+    height: 50vh;
+}
 
 .headline-container {
-    max-width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    padding: none;
+    width: fit-content;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin: auto;
 }
 
 .container {
@@ -59,7 +62,6 @@ header {
 .text-box {
     font-family: var(--headline-font);
     position: absolute;
-    box-sizing: content-box;
     top: 0;
     left: 0;
     background: #000;
@@ -67,9 +69,10 @@ header {
     width: 100%;
     color: black;
     display: flex;
+    align-items: center;
     justify-content: center;
     text-align: center;
-    font-size: 50px;
+    font-size: 30px;
     font-weight: 400;
     max-width: 1440px;
     mix-blend-mode: multiply;
@@ -139,9 +142,9 @@ h2{
 }
 
 /*For tablets*/
-@media screen and (min-width: 425px) and (max-width: 768px){
+@media screen and (min-width: 430px) and (max-width: 768px){
     .text-box{
-        font-size: 30px;
+        font-size: 70px;
     }
     h2{
         font-size: 30px;
@@ -156,13 +159,6 @@ h2{
         width: 90%;
         height: 400px;
     }
-    .headline-container {
-        max-width: fit-content;
-        margin-left: auto;
-        margin-right: auto;
-        padding: none;
-    }
-   
 }
 
 /*For Laptop*/
