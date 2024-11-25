@@ -52,9 +52,11 @@ article p {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
 }
 .parallax-1 {
     background-image: url('picvideo/Picture1.jpg');
+    z-index: -1;
     .p1h2{
         text-align: center;
     }
@@ -114,7 +116,5 @@ footer{
 }
 
 @media (min-width: 769px) {
-    article {
-        margin-top: -100px; 
-    }
+    
 }
