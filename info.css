@@ -36,7 +36,7 @@ article{
 .parallax{
     height: 130vh;
     width: 100%;
-    background-image: url('bilde/bilde-av-mobil.jpg');
+    background-image: url('picvideo/bilde-av-mobil.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -94,7 +94,7 @@ img{
 .parallax-footer{
     height: 80vh;
     width: 100%;
-    background-image: url('bilde/ai-natur.jpg');
+    background-image: url('picvideo/ai-natur.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
