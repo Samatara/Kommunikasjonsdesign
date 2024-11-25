@@ -95,6 +95,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 15px;
   }
   
   .parallax:nth-of-type(1) {
