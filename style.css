@@ -1,281 +1,112 @@
-:root {
-    --primary-color: #6200EE;
-    --secondary-color: #03DAC5;
-    --background-color: #121212;
-    --foreground-color: #FFFFFF;
-    --text-color: #B0B0B0;
-    --font-family: 'Poppins', sans-serif;
-  }
-  
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
+body{
+  margin: 0;
+}
 
-  ::-webkit-scrollbar {
-    width: 0px;
-    background: transparent;
-  }
-  
-  body {
-    font-family: var(--font-family);
-    line-height: 1.6;
-    color: var(--text-color);
-    background-color: var(--background-color);
-    overflow-x: hidden;
-    scroll-behavior: smooth;
-  }
-  
- 
-  header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: rgba(18, 18, 18, 0.9);
-    backdrop-filter: blur(10px);
-    color: var(--foreground-color);
-    padding: 15px 20px;
-    z-index: 1000;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-  }
-  
-  header h1 {
-    font-size: 28px;
-    margin: 0;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    animation: slideDown 1s ease-in-out;
-  }
-  
-  
-  @keyframes slideDown {
-    from {
-      opacity: 0;
-      transform: translateY(-50px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  
+.logo{
+  text-decoration: none;
+  color: black;
+  opacity: 50%;
+  font-weight: bold;
+}
 
-  #background-video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -2;
-    object-fit: cover;
-    opacity: 0.25;
-  }
-  
-  #background-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(135deg, rgba(98, 0, 238, 0.7), rgba(3, 218, 197, 0.7));
-    z-index: -1;
-    mix-blend-mode: overlay;
-  }
-  
-  .parallax {
-    position: relative;
-    min-height: 70vh;
-    background-attachment: scroll;
+.parallax{
+  background-image: url(picvideo/kiwi.png);
+    background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 15px;
-  }
-  
-  .parallax:nth-of-type(1) {
-    background-image: url('picvideo/kiwi.png');
-  }
-  
-  .parallax:nth-of-type(2) {
-    background-image: url('picvideo/beer.jpg');
-  }
-  
-  .parallax::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
+    height: 130vh;
     width: 100%;
-    height: 100%;
-    background: rgba(18, 18, 18, 0.6);
+}
+
+.spacer{
+  height: 30vh;
+}
+
+h1{
+  text-align: center;
+  margin: 2rem auto;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+p{
+  width: 90%;
+  margin: 1rem auto;
+  line-height: 1.5;
+  font-size: 18px;
+}
+
+ul{
+  font-size: 18px;
+  line-height: 1.5;
+  width: 80%;
+  margin: 1rem auto;
+  padding: 0.5rem;
+}
+
+video{
+  width: 100%;
+  height: auto;
+  animation: fade-in forwards;
+  animation-timeline: view();
+}
+
+h2{
+  text-align: center;
+  margin: 2rem auto;
+}
+
+h3{
+  text-align: center;
+  margin: 2rem auto;
+}
+
+footer p{
+  text-align: center;
+  margin: 0.4rem auto;
+}
+
+@keyframes fade-in {
+  from {scale: .8;}
+  to {scale: 1;}
+}
+
+@media screen and (min-width: 420px) {
+  h1{
+    font-size: 40px;
   }
-  
-  .parallax h2 {
-    position: relative;
-    color: var(--foreground-color);
-    font-size: 32px;
-    text-align: center;
-    z-index: 1;
-    padding: 0 20px;
-    animation: fadeIn 2s ease-in-out;
+}
+
+@media screen and (min-width: 760px) {
+  h1{
+    font-size: 50px;
   }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+  p{
+    font-size: 20px;
   }
-  
-  .content-section {
-    padding: 60px 20px;
-    background-color: #1E1E1E;
+  h2{
+    font-size: 30px;
   }
-  
-  .content-section h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
-    text-align: center;
-    color: var(--foreground-color);
+  h3{
+    font-size: 30px;
   }
-  
-  .content-section p, .content-section ul {
-    max-width: 100%;
-    margin: 0 auto 20px;
-    font-size: 16px;
-    color: var(--text-color);
-    line-height: 1.8;
+}
+
+@media screen and (min-width: 1024px) {
+  h1{
+    font-size: 70px;
   }
-  
-  .content-section ul li {
-    margin-bottom: 10px;
-    list-style: disc;
-    margin-left: 20px;
+  p{
+    width: 80%;
+    margin: 1rem auto;
   }
 
-  .article-container {
-    max-width: 100%;
-    margin: -80px auto 80px;
-    padding: 40px 20px;
-    background-color: #1E1E1E;
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
-    border-radius: 16px;
-    backdrop-filter: blur(10px);
+  video{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 1rem auto;
   }
-  
-  .article-container h1 {
-    font-size: 19px;
-    margin-bottom: 20px;
-    color: var(--foreground-color);
-    text-align: center;
-  }
-  
-  .article-container p {
-    font-size: 18px;
-    margin-bottom: 15px;
-    color: var(--text-color);
-    line-height: 1.8;
-    text-align: justify;
-  }
-  
- 
-  footer {
-    background-color: #222;
-    color: var(--text-color);
-    text-align: center;
-    padding: 30px 20px;
-  }
-  
-  footer p {
-    font-size: 14px;
-    color: var(--text-color);
-  }
-  
-
-  a {
-    color: var(--secondary-color);
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  a:hover {
-    color: var(--primary-color);
-    text-decoration: underline;
-  }
-  
-
-  @media (min-width: 768px) {
-    header h1 {
-      font-size: 36px;
-    }
-    .parallax {
-      min-height: 80vh;
-      background-attachment: fixed;
-    }
-    .parallax h2 {
-      font-size: 48px;
-    }
-    .content-section {
-      padding: 80px 40px;
-    }
-    .content-section h2 {
-      font-size: 40px;
-    }
-    .content-section p, .content-section ul {
-      max-width: 800px;
-      font-size: 18px;
-    }
-    .article-container {
-      max-width: 800px;
-      margin: -100px auto 100px;
-      padding: 60px;
-    }
-    .article-container h1 {
-      font-size: 25px;
-    }
-    .article-container p {
-      font-size: 20px;
-    }
-    footer p {
-      font-size: 16px;
-    }
-  }
-  
-  @media (min-width: 1024px) {
-    header h1 {
-      font-size: 48px;
-    }
-    .parallax h2 {
-      font-size: 56px;
-    }
-    .content-section {
-      padding: 100px 60px;
-    }
-    .content-section h2 {
-      font-size: 48px;
-    }
-    .content-section p, .content-section ul {
-      font-size: 20px;
-    }
-    .article-container {
-      padding: 80px;
-    }
-    .article-container h1 {
-      font-size: 25px;
-    }
-    .article-container p {
-      font-size: 22px;
-    }
-    footer p {
-      font-size: 18px;
-    }
-  }
-  
+}
