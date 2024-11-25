@@ -1,120 +1,171 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root{
+    --overskrift-color: #F8FAFB;
+    --underoverskrift-color: #4C4E96;
+    --brødtekst-color: #2E2E2E;
+    --bakgrunn-color: #F8FAFB;
+    --overskrift-font: 'Montserrat', sans-serif;
+    --brødtekst-font: 'Lora', serif;
 }
 
-body { 
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #fff;
-    background-color: #111;
-    line-height: 1.6;
+body{
+    background-color: var(--bakgrunn-color);
+    margin: 0;
+    padding: 0;
 }
 
 header{
-    background-color: #222;
-    text-align: center;
-    padding: 20px;
+    position: sticky;
+    top: 0px;
+    background-color: none;
 }
 
-header h1 {
-    margin: 0;
-    color: #fff;
-    
-}
-
-nav a {
+.logo{
     text-decoration: none;
-    color: #1e90ff;
+    color: rgb(125, 125, 125);
     font-weight: bold;
+    opacity: 50%;
 }
 
-main {
+article{
+    max-width: 1440px;
+    margin: auto;
+}
+
+.parallax{
+    height: 130vh;
     width: 100%;
-    overflow: hidden;
-}
-
-article {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 40px 20px;
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-article p {
-    margin-bottom: 1.5em;
-    font-size: 1.1em;
-}
-
-.parallax {
-    min-height: 60vh;
+    background-image: url('bilde/bilde-av-mobil.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
-}
-.parallax-1 {
-    background-image: url('picvideo/Picture1.jpg');
-    z-index: -1;
-    .p1h2{
-        text-align: center;
-    }
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-
-.parallax-image {
-    position: relative;
-    overflow: hidden;
-    margin: 50px 0;
+.spacer{
+    height: 10vh;
 }
 
-.parallax-image img {
+h1{
+    color: var(--overskrift-color);
+    font-family: var(--overskrift-font);
+    background-color: none;
+    font-weight: bold;
+    text-align: center;
+    margin: 2rem auto;
+    font-size: 25px;
+    max-width: 908px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.forste-avsnitt{
+    padding-top: 3rem;
+    font-weight: bolder;
+    text-align: left;
+    margin: 2rem 1rem;
+    max-width: 908px;
+    color: var(--underoverskrift-color);
+}
+
+p{
+    color: var(--brødtekst-color);
+    font-family: var(--brødtekst-font);
+    font-weight: 500;
+    line-height: 1.5;
+    margin: 1rem;
+    font-size: 18px;
+    max-width: 908px;
+    width: 90%;
+    padding-bottom: 3rem;
+}
+
+img{
+    height: 400px;
+    width: auto;
+    margin: 1rem auto;
+    animation: fade-in forwards;
+    animation-timeline: view();
+}
+
+.parallax-footer{
+    height: 80vh;
     width: 100%;
-    transform: translateZ(0);
-    will-change: transform;
-}
-
-.parallax-image .parallax-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 15px;
-    border-radius: 10px;
-}
-
-.parallax-image .parallax-content h2 {
-    font-size: 2em;
-    margin: 0;
-}
-
-footer{
-    background-color: #222;
-    text-align: center;
-    padding: 20px;
-    
-}
-
-
-@media (max-width: 768px) {
-    .parallax {
-        background-attachment: scroll;
+    background-image: url('bilde/ai-natur.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h3{
+        color: var(--overskrift-color);
+        font-family: var(--overskrift-font);
+        margin: 1rem auto;
+        text-align: center;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     }
-
-    .parallax-image .parallax-content h2 {
-        font-size: 1.5em;
-        padding: 10px;
-    }
-
-    article {
-        padding: 20px;
+    p{
+        color: var(--overskrift-color);
+        font-family: var(--overskrift-font);
+        margin: 0.3rem auto;
+        text-align: center;
+        width: 90%;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
     }
 }
 
-@media (min-width: 769px) {
-    
+@keyframes fade-in{
+    from {scale: .8;}
+    to {scale: 1;}
+}
+
+@media screen and (min-width: 425px) {
+    h1{
+        width: 90%;
+    }
+    p{
+        width: 90%;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    header{
+        top: 20px;
+        margin-left: 20px;
+    }
+    .logo{
+        font-size: 130%;
+    }
+    .forste-avsnitt{
+        width: 80%;
+        margin: 0.5rem auto;
+    }
+    h1{
+        font-size: 50px;
+        margin: 2rem auto;
+    }
+    p{
+        font-size: 20px;
+        width: 80%;
+        margin: 0.5rem auto;
+    }
+    img{
+        display: flex;
+        flex-direction: column;
+        margin: 2rem auto;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    h1{
+        font-size: 40px;
+    }
+    p{
+        font-size: 20px;
+    }
 }
